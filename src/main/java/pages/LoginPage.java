@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
     private WebDriver driver;
     private By usernameField = By.id("uid");
-    private By passwordField = By.id("passw");
+    private By passWordField = By.id("passw");
     private By loginBtn = By.name("btnSubmit");
     private By errorMsg = By.cssSelector("div[class='fl'] h1");
 
@@ -19,7 +19,7 @@ public class LoginPage {
     }
 
     public void enterPassword(String password) {
-        driver.findElement(passwordField).sendKeys(password);
+        driver.findElement(passWordField).sendKeys(password);
     }
 
     public void clickLogin() {
